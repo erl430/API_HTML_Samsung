@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Reproductor de vídeo</title>
+        <!--Bootstrap-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+        <!--CSS-->
+        <link rel="stylesheet" href="styles.css">
+        <!--JavaScript-->
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <!--Entrada del archivo-->
+        <input type="file" id="inputFile" accept="video/*">
+        <!--Mensaje de carga-->
+        <div id="loading" class="hidden">Cargando...</div>
+        <!--Contenedor del video-->
+        <div id="videoContainer" class="hidden">
+            <video id="videoPlayer" width="640" height="360" controls>  </video>
+        </div>
+        <!--Contenedor de los botones de control-->
+        <div id="controls" class="hidden">
+            <button type="button" class="btn btn-secondary hidden" id="play">Play</button>
+            <button type="button" class="btn btn-secondary hidden" id="pause">Pausa</button>
+            <button type="button" class="btn btn-secondary hidden" id="volumeUp">Subir volumen</button>
+            <button type="button" class="btn btn-secondary hidden" id="volumeDown">Bajar volumen</button>
+            <button type="button" class="btn btn-secondary hidden" id="volumeMute">Quitar sonido</button>
+            <button type="button" class="btn btn-secondary hidden" id="volumeNoMute">Poner sonido</button>
+        </div>
+    </body>
+</html>
